@@ -1,0 +1,13 @@
+<% if notice %>
+  <p class="notice"><%= notice %></p>
+<% end %>
+
+<div class="post-details">
+  <%= render @post %>
+
+  <div class="post-actions">
+    <%= link_to "✏️ Edit this post", edit_post_path(@post), class: "action-link" %> |
+    <%= link_to "← Back to posts", posts_path, class: "action-link" %> |
+    <%= button_to "🗑️ Destroy this post", @post, method: :delete, data: { confirm: "Are you sure?" }, class: "delete-button" %>
+  </div>
+</div>

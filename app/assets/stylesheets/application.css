@@ -1,0 +1,231 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body{
+    background:grey;
+    display : flex ;
+    flex-direction : column;
+    justify-content : center;
+    align-content: center;
+    font-size:1.1rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f4f4f9; */
+    margin: 0;
+    padding: 20px;
+ }
+  
+  .page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .post-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .btn-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
+  .new-post-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn-primary {
+    background-color:rgba(219, 52, 41, 0.85);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+  }
+  
+
+  .custom-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    display:flex;
+    flex-direction:column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .error-messages {
+    color: #d8000c;
+    background-color: #ffd2d2;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #d8000c;
+    border-radius: 4px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .form-actions {
+    text-align: center;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .back-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-link a {
+    text-decoration: none;
+    color:rgb(32, 97, 165);
+    font-weight: bold;
+  }
+  
+  .back-link a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+
+
+  .notice {
+    color: green;
+    background-color: #e6ffed;
+    padding: 10px 15px;
+    margin: 15px auto;
+    border: 1px solid #c6f6d5;
+    width: fit-content;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .post-details {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .post-details h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #222;
+  }
+  
+  .post-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .post-actions {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .action-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 8px;
+  }
+  
+  .action-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    margin:20px;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  
