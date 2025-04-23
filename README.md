@@ -322,9 +322,18 @@ kubectl port-forward service/webapp-service 3000:3000
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 
-- Apply ArgoCD application:
+- Check all pods and service
+
 ```bash
-kubectl apply -f argocd/application.yaml
+kubectl get all -n argocd
+kubectl get svc -n argocd
+minikube service list -n argocd
+```
+
+
+- Start the ArgoCD UI
+```bash
+minikube service argocd-server -n argocd
 ```
 
 ### 5. Tekton (CI/CD)
@@ -332,9 +341,36 @@ kubectl apply -f argocd/application.yaml
 - Install Tekton and Tekton Dashboard:
   [Install Tekton](https://tekton.dev/docs/pipelines/installation/)
 
-- Apply the pipeline and tasks:
+
+- Check pipelines
+    ```bash
+    kubectl get pods -n tekton-pipelines
+    kubectl get svc tekton-dashboard -n tekton-pipelines
+    ```
+
+- Monitor running Status
+
 ```bash
-kubectl apply -f tekton/
+kubectl get pods --namespace tekton-pipelines --watch
+```
+- Access The Dashboard
+```bash
+kubectl port-forward svc/tekton-dashboard -n tekton-pipelines 9097:9097
+```
+
+- Run Pipeline
+
+```bash
+kubectl apply -f docker-credentials.yaml
+kubectl apply -f git-clone-task.yaml
+kubectl apply -f kaniko-task.yaml
+kubectl apply -f pipeline.yaml
+kubectl apply -f service-account.yaml
+```
+
+- Create Pipeline Run
+```bash
+kubectl create -f pipelinerun.yaml
 ```
 
 - Use the Tekton Dashboard to manually run the pipeline.
