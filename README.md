@@ -277,8 +277,8 @@ Visit <http://localhost:9097> in your browser to see the Tekton Dashboard.
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-private-repo>
-cd <repo>
+git clone https://github.com/BejadiRajeshReddy/RubyPostgresApp
+cd RubyPostgresApp
 ```
 
 ### 2. Docker
