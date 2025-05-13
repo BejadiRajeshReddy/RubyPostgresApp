@@ -14,7 +14,7 @@ This project is a part of a DevOps assessment designed to evaluate hands-on know
 
 A Ruby on Rails app is containerized, deployed on Kubernetes using Helm or YAML, configured for GitOps with ArgoCD, and automated using Tekton pipelines.
 
----
+
 
 ## 🧰 Tech Stack
 
@@ -60,7 +60,6 @@ RAILS-POSTGRES-APP/
 
 Step‑by‑step walkthrough to get **all** of the required tools installed on a fresh Ubuntu 22.04 LTS (Linux) workstation.
 
----
 
 ## 🐧 Step 1: Install Ubuntu via Microsoft Store
 
