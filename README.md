@@ -62,8 +62,6 @@ Step‑by‑step walkthrough to get **all** of the required tools installed on a
 
 ---
 
----
-
 ## 🐧 Step 1: Install Ubuntu via Microsoft Store
 
 ### ✅ Requirements:
